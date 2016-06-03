@@ -13,6 +13,7 @@
 		<!-- PENDIENTE -->
 
 	  <!-- Styles -->
+		<link rel="stylesheet" href="/css/fontastic.css">
 		<link rel="stylesheet" href="/css/styles.css">
 
 		<!-- Jquery -->
