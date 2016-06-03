@@ -5,7 +5,7 @@ class Pages {
 	public static function home()
 	{
 		return [
-			'page_title'       => '',
+			'page_title'       => ' - Circuitos Turísticos',
 			'page_name'        => 'home',
 			'meta_robots'      => 'index, follow',
 			'meta_description' => '',
@@ -16,8 +16,8 @@ class Pages {
 	public static function about()
 	{
 		return [
-			'page_title'       => '',
-			'page_name'        => ' - Nosotros',
+			'page_title'       => ' - Nosotros',
+			'page_name'        => 'about',
 			'meta_robots'      => 'index, follow',
 			'meta_description' => '',
 			'page_view'        => '_views/about.php',
@@ -27,8 +27,8 @@ class Pages {
 	public static function units()
 	{
 		return [
-			'page_title'       => '',
-			'page_name'        => ' - Unidades',
+			'page_title'       => ' - Unidades',
+			'page_name'        => 'units',
 			'meta_robots'      => 'index, follow',
 			'meta_description' => '',
 			'page_view'        => '_views/units.php',
@@ -38,8 +38,8 @@ class Pages {
 	public static function services()
 	{
 		return [
-			'page_title'       => '',
-			'page_name'        => ' - Servicios',
+			'page_title'       => ' - Servicios',
+			'page_name'        => 'services',
 			'meta_robots'      => 'index, follow',
 			'meta_description' => '',
 			'page_view'        => '_views/services.php',
@@ -49,8 +49,8 @@ class Pages {
 	public static function gallery()
 	{
 		return [
-			'page_title'       => '',
-			'page_name'        => ' - Gallería',
+			'page_title'       => ' - Gallería',
+			'page_name'        => 'gallery',
 			'meta_robots'      => 'index, follow',
 			'meta_description' => '',
 			'page_view'        => '_views/gallery.php',

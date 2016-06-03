@@ -20,7 +20,7 @@ gulp.task('sass', function () {
 
 gulp.task('serve', function() {
 	browserSync.init({
-		proxy: "www.ohana.app",
+		proxy: "www.garef.app",
         open: false
 	});    
 

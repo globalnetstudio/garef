@@ -49,11 +49,14 @@
 			</div> <!-- /.content -->
 		</section>
 
-		<aside>
-			<div class="aside">
-				ASIDE
-			</div> <!-- /.aside -->
-		</aside>
+		<?php if($page_name == 'contact') : ?>
+			<div class="contact-information">
+				<p><span class="icon-email"></span>&nbsp;viajesgaref@yahoo.com.mx</p>
+				<p><span class="icon-telephone"></span>&nbsp;(55) 1517-1059</p>
+				<p><span class="icon-telephone"></span>&nbsp;(55) 5019-7836</p>
+				<p><span class="icon-mobile"></span>&nbsp;044 55 4023-3128</p>
+			</div> <!-- /.contact-information -->
+		<?php endif; ?>
 
 		<a href="#" class="scroll-top"><span class="scroll-top__icon"></span></a>
 
@@ -61,9 +64,9 @@
 			<div id="footer">
 				<div class="footer__wrapper">
 
-					<p id="footer__copyright">Copyright <?php echo date('Y'); ?> &copy; Circuitos Turísticos Garef <span class="dot">&#8226;</span> <span class="reserved">Todos los Derechos Reservados</span></p>
+					<p class="footer__copyright">Copyright <?php echo date('Y'); ?> &copy; Circuitos Turísticos Garef <span class="dot">&#8226;</span> <span class="reserved">Todos los Derechos Reservados</span></p>
 
-					<p id="footer__developed-by">Desarrollo por <img src="/images/icons/global-net-studio-logo.png" alt="Global Net Studio Logo"> <a href="http://globalnetstudio.com/" target="_blank">Global Net Studio</a></p>
+					<p class="footer__developed-by">Desarrollo por <img src="/images/icons/global-net-studio-logo.png" alt="Global Net Studio Logo"> <a href="http://globalnetstudio.com/" target="_blank">Global Net Studio</a></p>
 
 				</div> <!-- /.footer_wrapper -->
 			</div> <!-- /.footer -->

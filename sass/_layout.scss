@@ -1,0 +1,29 @@
+$mainWidth: 960px;
+
+.header {
+	min-height: 300px;
+}
+
+.menu ul {
+	@include main-width($mainWidth - 135px);
+	padding-left: 135px;
+	height: 50px;
+	margin-top: 20px;
+	position: relative;
+	z-index: 10px;
+}
+
+.content {
+	min-height: 300px;	
+}
+
+#footer {
+	width: 100%;
+
+	.footer__developed-by {
+		margin-top: 5px;
+		img {
+			margin-bottom: -4px;
+		}
+	}
+}

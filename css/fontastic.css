@@ -62,3 +62,6 @@
 .icon-circle:before {
   content: "\6f";
 }
+.icon-arrow-up:before {
+  content: "\75";
+}

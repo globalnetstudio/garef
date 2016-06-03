@@ -1,3 +1,25 @@
 <div class="about">
-	<h1>Página de Nosotros</h1>
-</div>
+	<h2>Nosotros</h3>
+
+	<p>Circuitos Turísticos Garef es una empresa que nace en el 2001, como cualquier cliente que Rentaba Autobuses se dio cuenta de las necesidades y deficiencias de servicios. Fue por ello que surgió "Circuitos Turísticos" una empresa dedicada a la Transportacion Turistica de pasajeros con servicios en unidades exclusivamente de "Gran Lujo" siendo nuestro objetivo que nuestros "Clientes" queden Satisfechos con el servicio completamente, y lo principalmente primordial es hacer que su viaje sea un "Total placer de Viajar por Carretera".</p>
+
+	<p>Para ello buscamos proporcionar a nuestros Clientes las Unidades mas Modernas del Mercado, con la más "Alta calidad" y lo más importante es "Satisfacer las necesidades de Nuestro Cliente".</p>
+
+	<p>Nosotros somos Una Gran Opción en Transportación Turística para nuestro cliente a Nivel nacional, proporcionamos logistica de Viaje, así como operadores altamente capacitados, las unidades y operadores son monitoreados para llegar a su servicio siempre puntual, así ustedes nunca se preocuparan por su servicio.</p>
+
+	<h3>Nosotros les ofreceremos:</h3>
+
+	<ul>
+		<li>Compromiso</li>
+		<li>Puntualidad</li>
+		<li>Seguridad</li>
+		<li>Confiabilidad</li>
+		<li>Profesionalismo</li>
+		<li>Innovación</li>
+		<li>Actitud de servicio</li>
+	</ul>
+
+	<p>Por ello y mucho mas</p>
+	<p>"Circuitos Turísticos le da Más"</p>
+	<p>EXCELENTE VIAJE</p>
+</div> <!-- /.about -->
