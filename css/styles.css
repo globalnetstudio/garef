@@ -59,11 +59,21 @@ label.error {
 }
 
 .header {
-  min-height: 300px;
+  height: 207px;
+  background-image: url("/images/header/header-background.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: initial;
+}
+
+.header .wrapper {
+  width: 982px;
+  height: 207px;
+  margin: auto;
 }
 
 .menu ul {
-  width: 825px;
+  width: 847px;
   margin: auto;
   padding-left: 135px;
   height: 50px;
@@ -89,12 +99,179 @@ label.error {
 }
 
 .header {
-  border-top: 13px solid #f19c06;
+  position: relative;
+  z-index: 0;
+}
+
+.header .wrapper {
+  -js-display: flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+
+.header .address-social {
+  margin-top: 25px;
+  margin-bottom: 20px;
+  -js-display: flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.header .mail-phone-numbers {
+  -js-display: flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+
+.logo {
+  padding: 0 50px;
+  height: 185px;
+  width: 185px;
+  position: relative;
+  top: 18px;
+}
+
+.contact-information {
+  color: #fff;
+  font-family: Arial, Verdana, sans-serif;
+  font-size: 13px;
+  height: 138px;
+  position: relative;
+  top: 20px;
+}
+
+.contact-information a {
+  color: #fff;
+}
+
+.contact-information .icon {
+  color: #f19c06;
+  font-size: 16px;
+}
+
+.contact-information .address {
+  margin-right: 20px;
+}
+
+.contact-information .mail-phone-numbers .icon {
+  position: relative;
+  top: 4px;
+}
+
+.contact-information__social-buttons, .contact-information__social-buttons--twitter, .contact-information__social-buttons--facebook, .contact-information__social-buttons--youtube {
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  margin-right: 5px;
+  position: relative;
+}
+
+.contact-information__social-buttons .social, .contact-information__social-buttons--twitter .social, .contact-information__social-buttons--facebook .social, .contact-information__social-buttons--youtube .social {
+  display: block;
+  font-size: 16px;
+  height: 16px;
+  width: 16px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+.contact-information__social-buttons--twitter {
+  background-color: #62ade6;
+}
+
+.contact-information__social-buttons--facebook {
+  background-color: #24408c;
+}
+
+.contact-information__social-buttons--youtube {
+  background-color: #db1f25;
+}
+
+.carousel {
+  width: 100%;
+  height: 442px;
+  margin-bottom: -50px;
+  position: relative;
+  top: -50px;
+}
+
+.carousel__left-right, .carousel__left, .carousel__right {
+  height: 442px;
+  width: 50%;
+  position: relative;
+  z-index: 0;
+}
+
+.carousel__left {
+  float: left;
+  background: url("/images/slider/background-left-slider.jpg") left center no-repeat;
+}
+
+.carousel__center {
+  height: 492px;
+  width: 982px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.carousel__right {
+  float: right;
+  background: url("/images/slider/background-right-slider.jpg") right center no-repeat;
+}
+
+.bx-viewport {
+  left: 0 !important;
+  width: 978px !important;
+}
+
+.bx-wrapper .bx-pager {
+  display: none;
+}
+
+.bx-wrapper .bx-viewport {
+  border: none;
+}
+
+.bx-wrapper .bx-controls-direction a {
+  top: 0;
+  margin-top: inherit;
+  width: 64px;
+  height: 442px;
+  background: none;
+}
+
+.bx-wrapper .bx-prev {
+  background: url("/images/slider/left-arrow.png") left center no-repeat !important;
+  background-size: 64px 442px;
+  left: 0;
+}
+
+.bx-wrapper .bx-next {
+  background: url("/images/slider/right-arrow.png") right center no-repeat !important;
+  right: 4px;
+  background-size: 64px 442px;
 }
 
 .menu {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.75);
+  position: relative;
+  z-index: 30;
 }
 
 .menu ul {

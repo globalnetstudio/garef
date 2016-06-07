@@ -1,7 +1,17 @@
-$mainWidth: 960px;
+$mainWidth: 982px;
 
 .header {
-	min-height: 300px;
+	height: 207px;
+	background-image: url('/images/header/header-background.jpg');
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: initial;
+
+	.wrapper {
+		width: $mainWidth;
+		height: 207px;
+		margin: auto;
+	}
 }
 
 .menu ul {

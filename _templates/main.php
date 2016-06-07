@@ -14,6 +14,7 @@
 
 	  <!-- Styles -->
 		<link rel="stylesheet" href="/css/fontastic.css">
+		<link rel="stylesheet" href="/css/jquery.bxslider.css">
 		<link rel="stylesheet" href="/css/styles.css">
 
 		<!-- Jquery -->
@@ -38,10 +39,16 @@
 		<h1 class="hide">Garef Circuitos Turísticos</h1>
 
 		<header>
-			<div class="header">
-				<?php include('_partials/menu.php'); ?>
-			</div> <!-- /.header -->
+			<?php include('_partials/header.php'); ?>
 		</header>
+
+		<nav>
+			<?php include('_partials/menu.php'); ?>
+		</nav>
+
+		<section>
+			<?php include('_partials/slider.php'); ?>
+		</section>
 
 		<section>
 			<div class="content">
@@ -73,6 +80,8 @@
 		</footer>
 
 		<!-- Custom Scripts -->
+		<script src="/js/jquery.easing.js"></script>
+		<script src="/js/jquery.bxslider.min.js"></script>
 		<script src="/js/scripts.js"></script>
 	</body>
 </html>

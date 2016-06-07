@@ -1,0 +1,66 @@
+.contact-information {
+	color: $white;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 13px;
+	height: 138px;
+
+	position: relative;
+	top: 20px;
+	a {
+		color: $white;
+	}
+
+	.icon {
+		color: $yellow;
+		font-size: 16px;
+	}
+
+	.address {
+		margin-right: 20px;
+	}
+
+	.mail-phone-numbers {
+		.icon {
+			position: relative;
+			top: 4px;
+		}
+	}
+
+	&__social-buttons {
+		display: inline-block;
+		height: 25px;
+		width: 25px;
+
+		margin-right: 5px;
+		position: relative;
+
+		.social {
+			display: block;
+			font-size: 16px;
+			height: 16px;
+			width: 16px;
+
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			margin: auto;
+		}
+	}
+
+	&__social-buttons--twitter {
+		@extend .contact-information__social-buttons;
+		background-color: #62ade6;
+	}
+
+	&__social-buttons--facebook {
+		@extend .contact-information__social-buttons;
+		background-color: #24408c;
+	}
+
+	&__social-buttons--youtube {
+		@extend .contact-information__social-buttons;
+		background-color: #db1f25;
+	}
+}

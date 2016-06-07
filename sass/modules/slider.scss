@@ -1,0 +1,73 @@
+.carousel {
+	width: 100%;
+	height: 442px;
+	margin-bottom: -50px;
+	position: relative;
+	top: -50px;
+
+	&__left-right {
+		height: 442px;
+		width: 50%;
+		position: relative;
+		z-index: 0;
+	}
+
+	&__left {
+		float: left;
+		@extend .carousel__left-right;
+		background: url('/images/slider/background-left-slider.jpg') left center no-repeat;
+	}
+
+	&__center {
+		height: 492px;
+		width: $mainWidth;
+		
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 10;
+		
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	&__right {
+		float: right;
+		@extend .carousel__left-right;
+		background: url('/images/slider/background-right-slider.jpg') right center no-repeat;
+	}
+}
+
+.bx-viewport {
+	left: 0 !important;
+	width: $mainWidth - 4px !important;
+}
+
+.bx-wrapper .bx-pager {
+	display: none;
+}
+
+.bx-wrapper .bx-viewport {
+	border: none;
+}
+
+.bx-wrapper .bx-controls-direction a {
+  top: 0;
+  margin-top: inherit;
+  width: 64px;
+  height: 442px;
+  background: none;
+}
+
+.bx-wrapper .bx-prev {
+	background: url('/images/slider/left-arrow.png') left center no-repeat !important;
+	background-size: 64px 442px;
+	left: 0;
+}
+
+.bx-wrapper .bx-next {
+	background: url('/images/slider/right-arrow.png') right center no-repeat !important;
+	right: 4px;
+	background-size: 64px 442px;
+}
