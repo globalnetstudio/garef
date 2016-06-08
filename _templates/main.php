@@ -10,7 +10,7 @@
 		<link rel="stylesheet" href="/css/normalize.css">
 
 		<!-- Google Fonts -->
-		<!-- PENDIENTE -->
+		<link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
 
 	  <!-- Styles -->
 		<link rel="stylesheet" href="/css/fontastic.css">

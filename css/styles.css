@@ -19,6 +19,15 @@ a {
   width: 100%;
 }
 
+.heading-block, .home .content h3 {
+  background-color: #2b2c2c;
+  color: #fff;
+  font-family: Verdana, Arial, sans-serif;
+  text-align: center;
+  margin-bottom: 40px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.6);
+}
+
 .form-errors {
   background-color: #f2dede;
   border-color: #ebccd1;
@@ -363,6 +372,88 @@ label.error {
 
 #footer a:hover {
   text-decoration: underline;
+}
+
+.home .heading {
+  background-color: #39393a;
+  padding: 45px 0 80px;
+}
+
+.home .heading .wrapper {
+  width: 982px;
+  margin: auto;
+  background-color: #fff;
+  padding: 30px 40px;
+  box-shadow: inset 0px 0 16px 2px rgba(0, 0, 0, 0.8);
+}
+
+.home .heading .wrapper h2 {
+  color: #2b2829;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.home .heading .wrapper p {
+  color: #717272;
+  font-family: 16px;
+  font-family: Muli, Arial, sans-serif;
+  text-align: center;
+}
+
+.home .content {
+  width: 982px;
+  margin: auto;
+}
+
+.home .content h3 {
+  font-size: 32px;
+  line-height: 70px;
+  margin-bottom: 50px;
+}
+
+.home .trucks {
+  -js-display: flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin-top: -40px;
+  margin-bottom: 10px;
+}
+
+.home .transportation-specialists {
+  height: auto;
+  width: 100%;
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 0;
+}
+
+.home .transportation-specialists img {
+  height: auto;
+  max-width: 979px;
+  width: 100%;
+}
+
+.home .description {
+  color: #747474;
+  font-family: Muli, Arial, sans-serif;
+  font-size: 18px;
+  text-align: center;
+  height: 100px;
+  width: 430px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.home .description .brand {
+  color: #fb0d00;
+  font-weight: bold;
 }
 
 #thanks .content {

@@ -1,0 +1,77 @@
+.home {
+	.heading {
+		background-color: $gray;
+		padding: 45px 0 80px;
+		.wrapper {
+			width: $mainWidth;
+			margin: auto;
+			background-color: #fff;
+			padding: 30px 40px;
+			box-shadow: inset 0px 0 16px 2px rgba(#000, .8);
+			h2 {
+				color: #2b2829;
+				font-family: Verdana, Arial, sans-serif;
+				font-size: 40px;
+				font-weight: bold;
+				margin-bottom: 20px;
+				text-align: center;
+			}
+			p {
+				color: #717272;
+				font-family: 16px;
+				font-family: Muli, Arial, sans-serif;
+				text-align: center;
+			}
+		}
+	}
+	.content {
+		width: $mainWidth;
+		margin: auto;
+		h3 {
+			@extend .heading-block;
+			font-size: 32px;
+			line-height: 70px;
+			margin-bottom: 50px;
+		}
+	}
+	.trucks {
+		-js-display: flex;
+		display: flex;
+		justify-content: space-between;
+		margin-top: -40px;
+		margin-bottom: 10px;
+	}
+
+	.transportation-specialists {
+		height: auto;
+		width: 100%;
+		margin-bottom: 30px;
+		position: relative;
+		z-index: 0;
+		img {
+			height: auto;
+			max-width: 979px;
+			width: 100%;
+		}
+	}
+
+	.description {
+		color: #747474;
+		font-family: Muli, Arial, sans-serif;
+		font-size: 18px;
+		text-align: center;
+
+		height: 100px;
+		width: 430px;
+
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 10;
+
+		.brand {
+			color: lighten(saturate(#c21006, 10%), 10%);
+			font-weight: bold;
+		}
+	}
+}
