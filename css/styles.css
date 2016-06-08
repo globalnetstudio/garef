@@ -129,12 +129,12 @@ label.error {
       justify-content: space-between;
 }
 
-.main-heading, .home .heading, .about .heading, .units .heading, .services .heading {
+.main-heading, .home .heading, .about .heading, .units .heading, .services .heading, .gallery .heading {
   background-color: #39393a;
   padding: 25px 0;
 }
 
-.main-heading .wrapper, .home .heading .wrapper, .about .heading .wrapper, .units .heading .wrapper, .services .heading .wrapper {
+.main-heading .wrapper, .home .heading .wrapper, .about .heading .wrapper, .units .heading .wrapper, .services .heading .wrapper, .gallery .heading .wrapper {
   width: 982px;
   margin: auto;
   background-color: #fff;
@@ -142,7 +142,7 @@ label.error {
   box-shadow: inset 0px 0 16px 2px rgba(0, 0, 0, 0.8);
 }
 
-.main-heading .wrapper h2, .home .heading .wrapper h2, .about .heading .wrapper h2, .units .heading .wrapper h2, .services .heading .wrapper h2 {
+.main-heading .wrapper h2, .home .heading .wrapper h2, .about .heading .wrapper h2, .units .heading .wrapper h2, .services .heading .wrapper h2, .gallery .heading .wrapper h2 {
   color: #2b2829;
   font-family: Verdana, Arial, sans-serif;
   font-size: 40px;
@@ -150,7 +150,7 @@ label.error {
   text-align: center;
 }
 
-.heading-block, .home .content h3, .units h3, .services h3 {
+.heading-block, .home .content h3, .units h3, .services h3, .gallery .heading-gallery {
   background-color: #2b2c2c;
   color: #fff;
   font-family: Verdana, Arial, sans-serif;
@@ -716,6 +716,63 @@ label.error {
 
 .services .excursions-img {
   max-width: 979px;
+}
+
+.gallery .content {
+  margin: 50px auto 40px;
+  width: 982px;
+}
+
+.gallery .heading-gallery {
+  height: 50px;
+  width: 100%;
+  -js-display: flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.gallery .heading-gallery h3 {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.gallery .heading-gallery .left-chevron, .gallery .heading-gallery .right-chevron {
+  display: block;
+  height: 20px;
+  width: 13px;
+}
+
+.gallery .heading-gallery .left-chevron {
+  background: url("/images/icons/right-chevron.png") no-repeat center left;
+  margin-left: 20px;
+}
+
+.gallery .heading-gallery .right-chevron {
+  background: url("/images/icons/left-chevron.png") no-repeat center right;
+  margin-right: 20px;
+}
+
+.gallery .row {
+  margin-bottom: 50px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+
+.gallery .row .column {
+  -ms-flex-preferred-size: 225px;
+      flex-basis: 225px;
+  height: 225px;
+  background-color: #ddd;
+  box-sizing: border-box;
+  border: solid 3px #d29d41;
+  border-radius: 5px;
 }
 
 #thanks .content {

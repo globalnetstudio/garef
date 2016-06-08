@@ -1,0 +1,58 @@
+.gallery {
+	.heading {
+		@extend .main-heading;
+	}
+
+	.content {
+		margin: 50px auto 40px;
+		width: $mainWidth;
+	}
+
+	.heading-gallery {
+		height: 50px;
+		width: 100%;
+		@extend .heading-block;
+
+		-js-display: flex;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		h3 {
+			font-family: Verdana, Arial, sans-serif;
+			font-size: 25px;
+			font-weight: bold;
+		}
+
+		.left-chevron, .right-chevron {
+			display: block;
+			height: 20px;
+			width: 13px;
+		}
+
+		.left-chevron {
+			background: url('/images/icons/right-chevron.png') no-repeat center left;
+			margin-left: 20px;
+		}
+
+		.right-chevron {
+			background: url('/images/icons/left-chevron.png') no-repeat center right;
+			margin-right: 20px;
+		}
+	}
+
+
+	.row {
+		margin-bottom: 50px;
+		display: flex;
+		justify-content: space-between;
+		.column {
+			flex-basis: 225px;
+			height: 225px;
+			background-color: #ddd;
+			box-sizing: border-box;
+			border: solid 3px #d29d41;
+			border-radius: 5px;
+		}
+	}
+}
