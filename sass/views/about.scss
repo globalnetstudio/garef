@@ -73,7 +73,7 @@
 				-js-display: flex;
 				display: flex;
 				.left-column {
-					width: 40%;
+					width: 40%;					
 				}
 				.right-column {
 					width: 60%;
@@ -85,9 +85,9 @@
 						margin-bottom: 5px;
 					}
 					.emphasis {
+						color: saturate(#cd922b, 20%);
 						font-size: 24px;
 						font-weight: bold;
-						color: saturate(#cd922b, 20%);
 					}
 				}
 			}

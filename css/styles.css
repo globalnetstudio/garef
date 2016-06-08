@@ -129,12 +129,12 @@ label.error {
       justify-content: space-between;
 }
 
-.main-heading, .home .heading, .about .heading {
+.main-heading, .home .heading, .about .heading, .units .heading {
   background-color: #39393a;
   padding: 25px 0;
 }
 
-.main-heading .wrapper, .home .heading .wrapper, .about .heading .wrapper {
+.main-heading .wrapper, .home .heading .wrapper, .about .heading .wrapper, .units .heading .wrapper {
   width: 982px;
   margin: auto;
   background-color: #fff;
@@ -142,7 +142,7 @@ label.error {
   box-shadow: inset 0px 0 16px 2px rgba(0, 0, 0, 0.8);
 }
 
-.main-heading .wrapper h2, .home .heading .wrapper h2, .about .heading .wrapper h2 {
+.main-heading .wrapper h2, .home .heading .wrapper h2, .about .heading .wrapper h2, .units .heading .wrapper h2 {
   color: #2b2829;
   font-family: Verdana, Arial, sans-serif;
   font-size: 40px;
@@ -150,7 +150,7 @@ label.error {
   text-align: center;
 }
 
-.heading-block, .home .content h3 {
+.heading-block, .home .content h3, .units h3 {
   background-color: #2b2c2c;
   color: #fff;
   font-family: Verdana, Arial, sans-serif;
@@ -555,9 +555,9 @@ label.error {
 }
 
 .about .content .features .row .right-column .emphasis {
+  color: #e69912;
   font-size: 24px;
   font-weight: bold;
-  color: #e69912;
 }
 
 .about .content .features__right {
@@ -574,6 +574,93 @@ label.error {
   height: auto;
   max-width: 455px;
   width: 100%;
+}
+
+.units .content {
+  margin: 30px auto 40px;
+  width: 982px;
+}
+
+.units p {
+  color: #616161;
+  font-family: Muli, Arial, Verdana;
+  font-size: 16px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.units .description {
+  margin-bottom: 30px;
+}
+
+.units h3 {
+  color: #f19c06;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+
+.units .row {
+  margin-bottom: 20px;
+  -js-display: flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.units .row .left-column {
+  box-sizing: border-box;
+  width: 47%;
+  margin-right: 3%;
+}
+
+.units .row .right-column {
+  box-sizing: border-box;
+  width: 47%;
+  margin-left: 3%;
+}
+
+.units ul {
+  margin-left: 25px;
+  margin-bottom: 30px;
+}
+
+.units li {
+  font-family: Muli, Arial, Verdana;
+  color: #616161;
+  margin-bottom: 2px;
+  list-style-type: none;
+  font-size: 18px;
+}
+
+.units .icon-circle {
+  color: #f19c06;
+  font-size: 8px;
+  margin-right: 10px;
+}
+
+.units .features-heading {
+  background-color: #f19c06;
+  color: #fff;
+  font-family: Muli, Arial, Verdana;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.units .white-bus img {
+  max-width: 489px;
+}
+
+.units .red-bus img {
+  max-width: 522px;
+}
+
+.units .sprinter-trucks img {
+  max-width: 522px;
+}
+
+.units .great-luxury img {
+  max-width: 576px;
 }
 
 #thanks .content {

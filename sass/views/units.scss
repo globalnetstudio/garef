@@ -1,0 +1,95 @@
+// Colors
+$paragraphColor: #616161;
+
+.units {
+	.heading {
+		@extend .main-heading;
+	}
+
+	.content {
+		margin: 30px auto 40px;
+		width: $mainWidth;
+	}
+
+	p {
+		color: $paragraphColor;
+		font-family: Muli, Arial, Verdana;
+		font-size: 16px;
+		margin-bottom: 20px;
+		text-align: center;
+	}
+
+	.description {
+		margin-bottom: 30px;
+	}
+
+	h3 {
+		@extend .heading-block;
+		color: $yellow;
+		padding: 10px 0;
+		margin-bottom: 20px;
+	}
+
+	.row {
+		margin-bottom: 20px;
+		-js-display: flex;
+		display: flex;
+
+		.left-column {
+			box-sizing: border-box;
+			width: 47%;
+			margin-right: 3%;
+		}
+
+		.right-column {
+			box-sizing: border-box;
+			width: 47%;
+			margin-left: 3%;
+		}
+	}
+
+	ul {
+		margin-left: 25px;
+		margin-bottom: 30px;
+	}
+
+	li {
+		font-family: Muli, Arial, Verdana;
+		color: #616161;
+		margin-bottom: 2px;
+		list-style-type: none;
+		font-size: 18px;
+	}
+
+	.icon-circle {
+		color: $yellow;
+		font-size: 8px;
+		margin-right: 10px;
+	}
+
+	.features-heading {
+		background-color: $yellow;
+		color: $white;
+		font-family: Muli, Arial, Verdana;
+		text-align: center;
+		padding: 5px 0;
+		border-radius: 5px;
+		margin-bottom: 10px;
+	}
+
+	.white-bus img {
+			max-width: 489px;
+	}
+
+	.red-bus img {
+			max-width: 522px;
+	}
+
+	.sprinter-trucks img {
+		max-width: 522px;
+	}
+
+	.great-luxury img {
+		max-width: 576px;
+	}
+}
