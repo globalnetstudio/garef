@@ -19,15 +19,6 @@ a {
   width: 100%;
 }
 
-.heading-block, .home .content h3 {
-  background-color: #2b2c2c;
-  color: #fff;
-  font-family: Verdana, Arial, sans-serif;
-  text-align: center;
-  margin-bottom: 40px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.6);
-}
-
 .form-errors {
   background-color: #f2dede;
   border-color: #ebccd1;
@@ -136,6 +127,36 @@ label.error {
   display: flex;
   -ms-flex-pack: justify;
       justify-content: space-between;
+}
+
+.main-heading, .home .heading, .about .heading {
+  background-color: #39393a;
+  padding: 25px 0;
+}
+
+.main-heading .wrapper, .home .heading .wrapper, .about .heading .wrapper {
+  width: 982px;
+  margin: auto;
+  background-color: #fff;
+  padding: 30px 40px;
+  box-shadow: inset 0px 0 16px 2px rgba(0, 0, 0, 0.8);
+}
+
+.main-heading .wrapper h2, .home .heading .wrapper h2, .about .heading .wrapper h2 {
+  color: #2b2829;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.heading-block, .home .content h3 {
+  background-color: #2b2c2c;
+  color: #fff;
+  font-family: Verdana, Arial, sans-serif;
+  text-align: center;
+  margin-bottom: 40px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.6);
 }
 
 .logo {
@@ -375,25 +396,11 @@ label.error {
 }
 
 .home .heading {
-  background-color: #39393a;
   padding: 45px 0 80px;
 }
 
-.home .heading .wrapper {
-  width: 982px;
-  margin: auto;
-  background-color: #fff;
-  padding: 30px 40px;
-  box-shadow: inset 0px 0 16px 2px rgba(0, 0, 0, 0.8);
-}
-
 .home .heading .wrapper h2 {
-  color: #2b2829;
-  font-family: Verdana, Arial, sans-serif;
-  font-size: 40px;
-  font-weight: bold;
   margin-bottom: 20px;
-  text-align: center;
 }
 
 .home .heading .wrapper p {
@@ -454,6 +461,119 @@ label.error {
 .home .description .brand {
   color: #fb0d00;
   font-weight: bold;
+}
+
+.about .content {
+  margin: 30px auto;
+  width: 982px;
+}
+
+.about .content .description {
+  font-size: 16px;
+  color: #717272;
+  font-family: Muli, Arial, Verdana;
+  line-height: 22px;
+}
+
+.about .content .description p {
+  margin-bottom: 10px;
+}
+
+.about .content .description p:last-child {
+  margin-bottom: 40px;
+}
+
+.about .content .description strong {
+  color: #000;
+}
+
+.about .content .description .black {
+  color: #000;
+}
+
+.about .content .features h3 {
+  background-color: #d9951f;
+  color: #fff;
+  font-family: Muli, Arial, Verdana;
+  font-size: 28px;
+  text-align: center;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+
+.about .content .features ul {
+  margin-bottom: 20px;
+}
+
+.about .content .features li {
+  font-family: Muli, Arial, Verdana;
+  font-size: 16px;
+  color: #726e6e;
+  list-style-type: none;
+  padding-left: 30px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.about .content .features li:before {
+  content: "";
+  background: url("/images/icons/checkmark.png") left center no-repeat;
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  left: 0;
+  top: -6px;
+}
+
+.about .content .features__left {
+  float: left;
+  width: 48%;
+  margin-right: 2%;
+}
+
+.about .content .features .row {
+  -js-display: flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about .content .features .row .left-column {
+  width: 40%;
+}
+
+.about .content .features .row .right-column {
+  width: 60%;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.about .content .features .row .right-column p {
+  font-family: Muli, Arial, Verdana;
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.about .content .features .row .right-column .emphasis {
+  font-size: 24px;
+  font-weight: bold;
+  color: #e69912;
+}
+
+.about .content .features__right {
+  float: right;
+  width: 48%;
+}
+
+.about .content .features .bus-image {
+  height: auto;
+  width: 100%;
+}
+
+.about .content .features .bus-image img {
+  height: auto;
+  max-width: 455px;
+  width: 100%;
 }
 
 #thanks .content {

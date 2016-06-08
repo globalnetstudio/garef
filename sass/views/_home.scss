@@ -1,20 +1,10 @@
 .home {
 	.heading {
-		background-color: $gray;
+		@extend .main-heading;
 		padding: 45px 0 80px;
 		.wrapper {
-			width: $mainWidth;
-			margin: auto;
-			background-color: #fff;
-			padding: 30px 40px;
-			box-shadow: inset 0px 0 16px 2px rgba(#000, .8);
 			h2 {
-				color: #2b2829;
-				font-family: Verdana, Arial, sans-serif;
-				font-size: 40px;
-				font-weight: bold;
 				margin-bottom: 20px;
-				text-align: center;
 			}
 			p {
 				color: #717272;
