@@ -631,6 +631,10 @@ label.error {
   font-size: 18px;
 }
 
+.units .space-before {
+  padding-left: 20px;
+}
+
 .units .icon-circle {
   color: #f19c06;
   font-size: 8px;

@@ -85,15 +85,16 @@
 				<h4 class="features-heading">Características Principales:</h4>
 
 				<ul>
-					<li>Capacidad para 17 y 20 pasajeros</li>
-					<li>Aire acondicionado</li> 
-					<li>Calefacción</li>
-					<li>Equipo de audio, dvd, pantalla 32 pulgadas y micrófono.</li>
-					<li>Asientos reclinables</li>
-					<li>Cabeceras</li>
-					<li>Coderas</li>
-					<li>Cortinas</li>
-					<li>Seguro de Viajero</li>
+					<li><i class="icon-circle"></i>Capacidad para 17 y 20 pasajeros</li>
+					<li><i class="icon-circle"></i>Aire acondicionado</li> 
+					<li><i class="icon-circle"></i>Calefacción</li>
+					<li><i class="icon-circle"></i>Esta Equipo de audio, dvd, pantalla 32 pulgadas<br><span class="space-before"></span>y micrófono.
+					</li>
+					<li><i class="icon-circle"></i>Asientos reclinables</li>
+					<li><i class="icon-circle"></i>Cabeceras</li>
+					<li><i class="icon-circle"></i>Coderas</li>
+					<li><i class="icon-circle"></i>Cortinas</li>
+					<li><i class="icon-circle"></i>Seguro de Viajero</li>
 				</ul>
 			</div> <!-- /.left-column -->
 			<div class="right-column">
