@@ -129,12 +129,12 @@ label.error {
       justify-content: space-between;
 }
 
-.main-heading, .home .heading, .about .heading, .units .heading {
+.main-heading, .home .heading, .about .heading, .units .heading, .services .heading {
   background-color: #39393a;
   padding: 25px 0;
 }
 
-.main-heading .wrapper, .home .heading .wrapper, .about .heading .wrapper, .units .heading .wrapper {
+.main-heading .wrapper, .home .heading .wrapper, .about .heading .wrapper, .units .heading .wrapper, .services .heading .wrapper {
   width: 982px;
   margin: auto;
   background-color: #fff;
@@ -142,7 +142,7 @@ label.error {
   box-shadow: inset 0px 0 16px 2px rgba(0, 0, 0, 0.8);
 }
 
-.main-heading .wrapper h2, .home .heading .wrapper h2, .about .heading .wrapper h2, .units .heading .wrapper h2 {
+.main-heading .wrapper h2, .home .heading .wrapper h2, .about .heading .wrapper h2, .units .heading .wrapper h2, .services .heading .wrapper h2 {
   color: #2b2829;
   font-family: Verdana, Arial, sans-serif;
   font-size: 40px;
@@ -150,7 +150,7 @@ label.error {
   text-align: center;
 }
 
-.heading-block, .home .content h3, .units h3 {
+.heading-block, .home .content h3, .units h3, .services h3 {
   background-color: #2b2c2c;
   color: #fff;
   font-family: Verdana, Arial, sans-serif;
@@ -600,6 +600,7 @@ label.error {
 }
 
 .units .row {
+  margin-top: 30px;
   margin-bottom: 20px;
   -js-display: flex;
   display: -ms-flexbox;
@@ -619,7 +620,7 @@ label.error {
 }
 
 .units ul {
-  margin-left: 25px;
+  margin-left: 10px;
   margin-bottom: 30px;
 }
 
@@ -665,6 +666,56 @@ label.error {
 
 .units .great-luxury img {
   max-width: 576px;
+}
+
+.services .description {
+  color: #717272;
+  font-family: Muli, Arial, Verdana;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.services .description p {
+  margin-bottom: 20px;
+}
+
+.services .content {
+  margin: 30px auto 30px;
+  width: 982px;
+}
+
+.services .black {
+  font-weight: bold;
+  color: #000;
+}
+
+.services h3 {
+  font-family: Verdana, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  padding: 10px 0;
+}
+
+.services .row {
+  margin-bottom: 20px;
+  -js-display: flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+
+.services .row .column {
+  width: 32%;
+}
+
+.services .service-img {
+  max-width: 307px;
+}
+
+.services .excursions-img {
+  max-width: 979px;
 }
 
 #thanks .content {

@@ -1,0 +1,52 @@
+.services {
+	.heading {
+		@extend .main-heading;
+	}
+
+	.description {
+		color: #717272;
+		font-family: Muli, Arial, Verdana;
+		font-size: 16px;
+		line-height: 22px;
+		text-align: center;
+		p {
+			margin-bottom: 20px;
+		}
+	}
+
+	.content {
+		margin: 30px auto 30px;
+		width: $mainWidth;
+	}
+
+	.black {
+		font-weight: bold;
+		color: $black;
+	}
+
+	h3 {
+		@extend .heading-block;
+		font-family: Verdana, Arial, sans-serif;
+		font-weight: bold;
+		font-size: 25px;
+		padding: 10px 0;
+	}
+
+	.row {
+		margin-bottom: 20px;
+		-js-display: flex;
+		display: flex;
+		justify-content: space-between;
+		.column {
+			width: 32%;
+		}
+	}
+
+	.service-img {
+		max-width: 307px;
+	}
+
+	.excursions-img {
+		max-width: 979px;
+	}
+}
