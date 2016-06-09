@@ -56,15 +56,6 @@
 			</div> <!-- /.content -->
 		</section>
 
-		<?php if($page_name == 'contact') : ?>
-			<div class="contact-information">
-				<p><span class="icon-email"></span>&nbsp;viajesgaref@yahoo.com.mx</p>
-				<p><span class="icon-telephone"></span>&nbsp;(55) 1517-1059</p>
-				<p><span class="icon-telephone"></span>&nbsp;(55) 5019-7836</p>
-				<p><span class="icon-mobile"></span>&nbsp;044 55 4023-3128</p>
-			</div> <!-- /.contact-information -->
-		<?php endif; ?>
-
 		<a href="#" class="scroll-top"><span class="scroll-top__icon"></span></a>
 
 		<footer>
