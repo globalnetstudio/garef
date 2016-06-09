@@ -64,7 +64,7 @@
 
 	if(!$ne || !$ph || !$em || !$qc) :
 		$_SESSION['error'] = '¡ No se pudo enviar el correo !';
-		header("Location: /contacto");
+		header("Location: /contacto#form-error");
 		exit();	
 	endif;
 

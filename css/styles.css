@@ -125,12 +125,12 @@ label.error {
       justify-content: space-between;
 }
 
-.main-heading, .home .heading, .about .heading, .units .heading, .services .heading, .gallery .heading, .contact .heading {
+.main-heading, .home .heading, .about .heading, .units .heading, .services .heading, .gallery .heading, .contact .heading, .thanks .heading {
   background-color: #39393a;
   padding: 25px 0;
 }
 
-.main-heading .wrapper, .home .heading .wrapper, .about .heading .wrapper, .units .heading .wrapper, .services .heading .wrapper, .gallery .heading .wrapper, .contact .heading .wrapper {
+.main-heading .wrapper, .home .heading .wrapper, .about .heading .wrapper, .units .heading .wrapper, .services .heading .wrapper, .gallery .heading .wrapper, .contact .heading .wrapper, .thanks .heading .wrapper {
   width: 982px;
   margin: auto;
   background-color: #fff;
@@ -138,7 +138,7 @@ label.error {
   box-shadow: inset 0px 0 16px 2px rgba(0, 0, 0, 0.8);
 }
 
-.main-heading .wrapper h2, .home .heading .wrapper h2, .about .heading .wrapper h2, .units .heading .wrapper h2, .services .heading .wrapper h2, .gallery .heading .wrapper h2, .contact .heading .wrapper h2 {
+.main-heading .wrapper h2, .home .heading .wrapper h2, .about .heading .wrapper h2, .units .heading .wrapper h2, .services .heading .wrapper h2, .gallery .heading .wrapper h2, .contact .heading .wrapper h2, .thanks .heading .wrapper h2 {
   color: #2b2829;
   font-family: Verdana, Arial, sans-serif;
   font-size: 40px;
@@ -244,7 +244,7 @@ label.error {
 }
 
 .carousel__center {
-  height: 492px;
+  height: 442px;
   width: 982px;
   position: absolute;
   top: 0;
@@ -1024,32 +1024,22 @@ label.error {
   font-size: 18px;
 }
 
-#thanks .content {
-  min-height: 150px !important;
-  padding-top: 30px;
+.wrapper {
+  margin: 50px auto;
+  width: 982px;
 }
 
-.thanks-content .message {
-  font-family: Arial, Verdana, sans-serif;
+.message {
   background-color: #dff0d8;
-  border: 1px solid transparent;
-  border-color: #d6e9c6;
+  border: solid 1px #c1e2b3;
   border-radius: 5px;
   box-sizing: border-box;
+  font-family: Muli, Verdana, sans-serif;
   color: #3c763d;
-  padding: 15px;
   text-align: center;
-}
-
-.thanks-content .message h2 {
-  font-weight: bold;
-  font-size: 1.5em;
-  margin-bottom: 15px;
-}
-
-.thanks-content .message p {
-  line-height: 20px;
-  padding: 0 20px;
+  padding: 20px;
+  font-size: 22px;
+  line-height: 24px;
 }
 
 /*# sourceMappingURL=styles.css.map */

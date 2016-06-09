@@ -7,7 +7,7 @@
 
 	<div class="content">
 		<?php if(isset($_SESSION['error']) && $_SESSION['error'] !== '') : ?>
-		<div class="form-errors">
+		<div class="form-errors" id="form-error">
 			<p><b><?php echo $_SESSION['error']; ?></b></p>
 
 			<ul>
@@ -125,7 +125,7 @@
 
 <script>
 $(document).ready(function() {
-	$("#contactForm").validate({
+	$("#contactForm-").validate({
 		rules: {
 			name: {
 				required: true,
