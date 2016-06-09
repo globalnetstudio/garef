@@ -98,7 +98,7 @@ class Pages {
 		];
 	}
 
-	public static function list()
+	public static function imagesList()
 	{
 		return [
 			'page_title'       => 'Lista de Imagenes',

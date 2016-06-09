@@ -48,7 +48,7 @@ switch ($pageUrl) {
 		break;
 
 	case 'admin/list':
-		extract(Pages::list());
+		extract(Pages::imagesList());
 		break;
 
 	default:
