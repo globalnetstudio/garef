@@ -15,3 +15,38 @@
 	border: solid 1px $color;
 	position: relative;	
 }
+
+@clearfix {
+	&:before,
+	&:after {
+		content: "";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+}
+
+@mixin imagegrid($quantity, $margin) {
+	width: ((100% - (($quantity - 1) * $margin)) / $quantity);
+	&:nth-child(n) {
+		margin-right: $margin;
+		margin-bottom: $margin;
+	}
+	&:nth-child(#{$quantity}n) {
+		margin-right: 0;
+		margin-bottom: 0;
+	}
+}
+
+@mixin breakpoint($args...) {
+	@if length($args) == 1 {
+		@media (min-width: nth($args, 1)) {
+			@content;
+		}
+	} @else {
+		@media (min-width: nth($args, 1)) and (max-width: nth($args, 2)) {
+			@content;
+		}
+	}
+}

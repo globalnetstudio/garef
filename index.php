@@ -2,10 +2,13 @@
 require('_partials/api.php'); // Carga el API
 
 // Obtener el url de sección
-$pageUrl  = isset($_GET['page']) ? strtolower($_GET['page'])  : '';
-
-// Obtener el url de categoría
-// $categoryUrl = isset($_GET['category']) ? $_GET['category'] : '';
+if (!isset($_GET['category']) && isset($_GET['page'])) {
+	$pageUrl = strtolower($_GET['page']);
+} elseif(isset($_GET['category']) && isset($_GET['page'])) { 
+	$pageUrl = strtolower($_GET['category'].'/'.$_GET['page']);
+} else {
+	$pageUrl = '';
+}
 
 // Carga la clase de Pages
 require('_classes/Pages.php');
@@ -39,15 +42,32 @@ switch ($pageUrl) {
 	case 'gracias':
 		extract(Pages::thanks());
 		break;
-	
+
+	case 'admin/upload':
+		extract(Pages::upload());
+		break;
+
+	case 'admin/list':
+		extract(Pages::list());
+		break;
+
 	default:
 		header('Location: /');
 		break;
 		exit();
 }
 
-// Carga la plantilla principal
-include_once('_templates/main.php');
+switch ($template) :
+	case 'main':
+		// Carga la Plantilla Principal
+		include_once('_templates/main.php');
+		break;
+	
+	case 'admin':
+		// Carga la plantilla administrativa
+		include_once('_templates/admin.php');
+		break;
+endswitch;
 
 // Vacia el array de sessión
 $_SESSION = [];

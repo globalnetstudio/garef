@@ -10,6 +10,7 @@ class Pages {
 			'meta_robots'      => 'index, follow',
 			'meta_description' => '',
 			'page_view'        => '_views/home.php',
+			'template'         => 'main'
 		];
 	}
 
@@ -21,6 +22,7 @@ class Pages {
 			'meta_robots'      => 'index, follow',
 			'meta_description' => '',
 			'page_view'        => '_views/about.php',
+			'template'         => 'main'
 		];
 	}
 
@@ -32,6 +34,7 @@ class Pages {
 			'meta_robots'      => 'index, follow',
 			'meta_description' => '',
 			'page_view'        => '_views/units.php',
+			'template'         => 'main'
 		];
 	}
 
@@ -43,6 +46,7 @@ class Pages {
 			'meta_robots'      => 'index, follow',
 			'meta_description' => '',
 			'page_view'        => '_views/services.php',
+			'template'         => 'main'
 		];
 	}
 
@@ -54,6 +58,7 @@ class Pages {
 			'meta_robots'      => 'index, follow',
 			'meta_description' => '',
 			'page_view'        => '_views/gallery.php',
+			'template'         => 'main'
 		];
 	}
 
@@ -65,6 +70,7 @@ class Pages {
 			'meta_robots'      => 'index, follow',
 			'meta_description' => '',
 			'page_view'        => '_views/contact.php',
+			'template'         => 'main'
 		];
 	}
 
@@ -76,6 +82,31 @@ class Pages {
 			'meta_robots'      => 'noindex, nofollow',
 			'meta_description' => '',
 			'page_view'        => '_views/thanks.php',
+			'template'         => 'main'
+		];
+	}
+
+	public static function upload()
+	{
+		return [
+			'page_title'       => 'Subir Imagenes',
+			'page_name'        => 'upload',
+			'meta_robots'      => 'noindex, nofollow',
+			'meta_description' => '',
+			'page_view'        => '_views/admin/upload-file.php',
+			'template'         => 'admin'
+		];
+	}
+
+	public static function list()
+	{
+		return [
+			'page_title'       => 'Lista de Imagenes',
+			'page_name'        => 'upload',
+			'meta_robots'      => 'noindex, nofollow',
+			'meta_description' => '',
+			'page_view'        => '_views/admin/images-list.php',
+			'template'         => 'admin'
 		];
 	}
 }
