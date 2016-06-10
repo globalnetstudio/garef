@@ -1,0 +1,13 @@
+.dropzone {
+	display: none;
+}
+
+.gallery .image {
+	position: relative;
+}
+
+.gallery .remove {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+}

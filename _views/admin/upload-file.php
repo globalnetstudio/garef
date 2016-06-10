@@ -1,3 +1,10 @@
+<?php if(isset($_SESSION['message'])): ?>
+  <div class="alert alert-success alert-dismissible" role="alert">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    <p class="text-center"><b><?php echo $_SESSION['message']; ?></b></p>
+  </div>
+<?php endif;  ?>
+
 <!-- Default box -->
 <div class="box">
   <div class="box-header with-border">
@@ -22,11 +29,13 @@
       </div>
     </div>
 
-    <form action="../upload-image.php?cat=1" id="myDropzone" class="dropzone">
+    <form action="../upload-image.php" id="myDropzone" class="dropzone">
+      <input id="category" name="cat" type="hidden" value="" />
       <div class="fallback">
         <input name="file" type="file" multiple />
       </div>
     </form>
+
   </div>
   <!-- /.box-body -->
   <div class="box-footer"></div>

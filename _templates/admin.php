@@ -1,3 +1,7 @@
+<?php
+include('_classes/Connection.php'); // Se include la clase de conexión
+$connection = new Connection(); // Se crea una nueva instancia de conexión
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,6 +22,8 @@
   <link rel="stylesheet" href="/css/skin-blue.min.css">
   <!-- Dropzone -->
   <link rel="stylesheet" href="/css/dropzone.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/css/admin.custom.css">
   <!-- Dropzone -->
   <script src="/js/dropzone.min.js"></script>
 
@@ -62,8 +68,41 @@
       <ul class="sidebar-menu">
         <li class="header">Navegación Principal</li>
         <li class="treeview">
+          <a href="#">
+            <i class="fa fa-image text-aqua"></i>&nbsp;
+            <span>Imágenes</span>&nbsp;
+            <i class="fa fa-angle-left pull-right"></i>
+          </a>
+          <ul class="treeview-menu">
+            <li>
+              <a href="/admin/list?cat=1">
+                <i class="fa fa-list"></i> Irizar I.6
+              </a>
+            </li>
+            <li>
+              <a href="/admin/list?cat=2">
+                <i class="fa fa-list"></i> Irizar P.b Autobus Negro
+              </a>
+            </li>
+            <li>
+              <a href="/admin/list?cat=3">
+                <i class="fa fa-list"></i> Irizar P.b Autobus Blanco
+              </a>
+            </li>
+            <li>
+              <a href="/admin/list?cat=4">
+                <i class="fa fa-list"></i> Irizar P.b Sprinter
+              </a>
+            </li>
+            <li>
+              <a href="/admin/list?cat=5">
+                <i class="fa fa-list"></i> Irizar P.b Suburban
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="treeview">
             <li><a href="/admin/upload"><i class="fa fa-upload text-yellow"></i> Subir</a></li>
-            <li><a href="/admin/list"><i class="fa fa-list text-aqua"></i> Lista</a></li>
             <li><a href="#"><i class="fa fa-sign-out text-light-blue"></i> <span>Salir</span></a></li>
           </ul>
         </li>
@@ -116,7 +155,8 @@
   Dropzone.options.myDropzone = {
     paramName: "file",
     maxFilesize: 2, // MB
-    dictDefaultMessage: '¡Suelte sus archivos aquí!'
+    dictDefaultMessage: '¡Suelte sus archivos aquí!',
+    createImageThumbnails,
   };
 </script>
 
@@ -130,9 +170,14 @@
     $categories.change(function(){
       var selected = $(this).find('option:selected').attr('value');
 
-      $dropzone.attr('action', '../upload-image.php?cat=' + selected);
+      if($dropzone.attr('display') !== 'block') {
+        $dropzone.css('display', 'block');
+      }
+
+      $dropzone.find('#category').attr('value', selected);
     });
   });
 </script>
 </body>
 </html>
+<?php $connection->close(); ?>
