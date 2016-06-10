@@ -22,7 +22,7 @@
       </div>
     </div>
 
-    <form action="../upload-image.php" id="myDropzone" class="dropzone">
+    <form action="../upload-image.php?cat=1" id="myDropzone" class="dropzone">
       <div class="fallback">
         <input name="file" type="file" multiple />
       </div>
