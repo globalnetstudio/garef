@@ -119,5 +119,20 @@
     dictDefaultMessage: '¡Suelte sus archivos aquí!'
   };
 </script>
+
+<script>
+  $(function() {
+    // Cachear el selector
+    var $categories = $('#categories');
+    var $dropzone = $('#myDropzone');
+
+    // Selecciona la opción de la lista
+    $categories.change(function(){
+      var selected = $(this).find('option:selected').attr('value');
+
+      $dropzone.attr('action', '../upload-image.php?cat=' + selected);
+    });
+  });
+</script>
 </body>
 </html>
